@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number-guessing-game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="score-board">
+            <div class="player-scores">
+                <h3>Player1 score:</h3>
+                <div class="lebel-div">
+                    <h2 id="player1-score"></h2>
+                </div>
+            </div>
+            <div class="player-scores">
+                <h3>Player2-score:</h3>
+                <div class="lebel-div">
+                    <h2 id="player2-score"></h2>
+                </div>
+            </div>
+        </div>
+        <h1 id="message">Click Start button to start the game</h1>
+        <h4 id="detail">(Choose a number between 1 to 5)</h4>
+        <input type="number" id="guessed-number">
+
+        <div id="controls">
+            <button id="start-btn" class="ctrl-btns">START</button>
+            <button id="end-btn" class="ctrl-btns">END!!</button>
+            <button id="next-btn" class="ctrl-btns">NEXT</button>
+            <button id="check-btn" class="ctrl-btns">CHECK</button>
+        </div>
+        <h6 id="disclaimer">Dont refresh the page in the middle of the game it resets the scores!!!!!!</h6>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
