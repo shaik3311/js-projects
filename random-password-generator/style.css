@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.level-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.level-buttons button {
+  flex: 1;
+  padding: 8px;
+  margin: 0 2px;
+  border: 1px solid #2196f3;
+  background: white;
+  color: #2196f3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.level-buttons .selected {
+  background: #2196f3;
+  color: white;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.output {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#generate-btn {
+  flex: 1;
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cancel-btn, #ok-btn {
+  flex: 0.5;
+  padding: 10px;
+  background: #e0f0ff;
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+  cursor: pointer;
+}
