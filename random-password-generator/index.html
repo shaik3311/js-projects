@@ -1,45 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Password Generator</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-password-generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Generate random password</h2>
-
-    <label>Password security Level:</label>
-    <div class="level-buttons">
-      <button id="weak" class="selected">Weak</button>
-      <button id="medium">Medium</button>
-      <button id="strong">Strong</button>
+    <div id="container">
+        <h1 id="heading">Generate random password</h1>
+        <h2 id="Password-Difficulty-heading">Password Difficulty:</h2>
+        <div id="difficultie-level-section">
+            <button class="level-btns" id="easy-level-btn">Easy</button>
+            <button class="level-btns" id="medium-level-btn">Medium</button>
+            <button class="level-btns" id="hard-level-btn">Hard</button>
+        </div>
+        <h2 id="customize-heading">Customize ⚙️</h2>
+        <h2 id="length-label">Password length: 6</h2>
+        <input type="range" min="4" max="20" value="6" id="length"><br>
+        <label for="UpperCase-chars"><input type="checkbox" id="UpperCase-chars" class="checkboxes">UpperCase</label><br>
+        <label for="LowerCase-chars"><input type="checkbox" id="LowerCase-chars" class="checkboxes">LowerCase</label><br>
+        <label for="Numbers"><input type="checkbox" id="Numbers" class="checkboxes">Numbers</label><br>
+        <label for="Symbols"><input type="checkbox" id="Symbols" class="checkboxes">Symbols</label><br>
+        <div id="output-section">
+            <p id="password-output"></p>
+        </div>
+        <button id="generate-btn">✨ Generate</button>
     </div>
-
-    <label>Password length: <span id="length-value">6</span></label>
-    <input type="range" min="4" max="20" value="6" id="length-range" />
-
-    <div class="options">
-      <label><input type="checkbox" id="uppercase" /> Uppercase letters</label>
-      <label><input type="checkbox" id="lowercase" checked /> Lowercase letters</label>
-      <label><input type="checkbox" id="numbers" checked /> Numbers</label>
-      <label><input type="checkbox" id="symbols" /> Symbols</label>
-    </div>
-
-    <label>Generated password:</label>
-    <div class="output">
-      <span id="password-output">Tap on "Generate new"</span>
-      <button id="copy-btn">📋</button>
-    </div>
-
-    <div class="actions">
-      <button id="generate-btn">✨ Generate new</button>
-      <button id="cancel-btn">Cancel</button>
-      <button id="ok-btn">OK</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

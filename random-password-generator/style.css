@@ -1,91 +1,110 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+}
+#container{
+    width: 420px;
+    max-width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+}
+#heading{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    opacity: 60%;
+    margin-bottom: 20px;
+}
+#Password-Difficulty-heading{
+    font-size: 18px;
+    font-weight: 540;
+    opacity: 60%;
+}
+#difficultie-level-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.level-btns{
+    font-size: 18px;
+    padding: 6px 12px;
+    width: 110px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(63, 63, 177);
+    color: white;
+    transition: background-color 0.6s ease;
+}
+.level-btns:hover{
+    background-color: rgb(91, 91, 168);
+}
+.level-btns:active{
+    scale: 0.93;
+}
+#customize-heading{
+    font-size: 22px;
+    margin-top: 10px;
+    opacity: 60%;
+}
+#length-label{
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 60%;
+}
+#length{
+    width: 80%;
+    margin-bottom: 10px;
+}
+#output-section{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#password-output{
+    width: 80%;
+    background-color: silver;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+label{
+    opacity: 70%;
+}
+#copy-btn{
+    width: 60px;
+    background-color: silver;
+    border: none;
+}
+#generate-btn{
+    margin: auto;
+    /* width: 120px; */
+    /* height: 40px; */
+    border: none;
+    border-radius: 4px;
+    background-color: green;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+#generate-btn:hover{
+    background-color: rgb(49, 144, 49);
+}
+#generate-btn:active{
+    scale: 0.93;
 }
 
-.container {
-  background: white;
-  padding: 20px 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 320px;
-}
-
-h2 {
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.level-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.level-buttons button {
-  flex: 1;
-  padding: 8px;
-  margin: 0 2px;
-  border: 1px solid #2196f3;
-  background: white;
-  color: #2196f3;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.level-buttons .selected {
-  background: #2196f3;
-  color: white;
-}
-
-input[type="range"] {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.options label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.output {
-  background: #eee;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.actions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-}
-
-#generate-btn {
-  flex: 1;
-  background: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px;
-  margin-right: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#cancel-btn, #ok-btn {
-  flex: 0.5;
-  padding: 10px;
-  background: #e0f0ff;
-  border: 1px solid #2196f3;
-  border-radius: 5px;
-  cursor: pointer;
-}
